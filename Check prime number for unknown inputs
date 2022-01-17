@@ -1,0 +1,19 @@
+li = []
+while True:
+    inp = input()
+    if inp == " ":
+        break
+    li.append(int(inp))
+for n in li:
+    if n==2:
+        print("{} is a prime number".format(n))
+    elif(n>2):
+        for i in range(2,n):
+            if (n%i==0):
+                print("{}  is NOT a prime number".format(n))
+                break
+            else:
+                print("{} is a prime number".format(n))
+                break
+    else:
+        print("{} is NOT a prime number".format(n))
