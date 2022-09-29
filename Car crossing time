@@ -1,0 +1,27 @@
+#IRC1A
+
+n1=int(input())
+n2=int(input())
+x=int(input())
+car1=n1+x
+car2=n2
+count=1
+if n1>=n2:
+    print(-1)
+while car1>=car2:
+    car1+=n1
+    car2+=n2
+    count+=1
+print(count)
+
+#IRC1B
+
+#IRC1
+n1=int(input())
+n2=int(input())
+x=int(input())
+if n1>=n2:
+    print(-1)
+time=x//(n2-n1)
+time=time+1
+print(time)
