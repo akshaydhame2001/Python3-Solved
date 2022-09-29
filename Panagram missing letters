@@ -1,0 +1,18 @@
+#IRC2A
+
+Str=str(input())
+Str=Str.lower()
+Str=Str.replace(" ","")
+x=[ i for i in Str]
+test_list = [chr(x) for x in range(ord('a'), ord('z') + 1)]
+ans=set(test_list)-set(x)
+print("".join(list(ans)))
+
+#IRC2B
+
+Str=str(input())
+Str=Str.lower()
+Str=Str.replace(" ","")
+testset = set(map(chr, range(97, 123)))
+ans=testset-set(Str)
+print("".join(ans))
