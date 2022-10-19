@@ -1,0 +1,25 @@
+def printOrder(arr,n):
+    arr.sort()
+    
+    i=0
+    while i<n/2:
+        print(arr[i],end=" ")
+        i=i+1
+    j=n-1
+    while j>=n/2:
+        print(arr[j],end=" ")
+        j=j-1
+arr=[5,4,6,2,1,3,8,9,7,10]
+n=len(arr)
+printOrder(arr,n)   
+
+def printOrder(arr,n):
+    arr1=arr[:n//2]
+    arr2=arr[n//2:]
+    arr1.sort()
+    arr2.sort(reverse=True)
+    print(arr1+arr2)
+    
+arr=[5,4,6,2,1,3,8,9,7,10]
+n=len(arr)
+printOrder(arr,n)
