@@ -1,0 +1,16 @@
+n=int(input())
+z=n
+t=int(input())
+for i in range(t):
+    ki=int(input())
+    if ki==z:
+        n=n*2
+    elif ki<z and ki%2!=0:
+        n=n-ki
+    elif ki<z and ki%2==0:
+        n=n//ki
+    elif ki>z and ki%2!=0:
+        n=n*ki
+    elif ki>z and ki%2==0:
+        n=n+ki
+print(n)
