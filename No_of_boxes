@@ -1,0 +1,13 @@
+n=int(input())
+arr=[]
+for i in range(n):
+    arr.append(int(input()))
+c=int(input())
+box=1
+sum=0
+for i in arr:
+    sum+=i
+    if sum>=c:
+        sum=0
+        box+=1
+print(box)
