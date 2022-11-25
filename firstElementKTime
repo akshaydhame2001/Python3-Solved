@@ -1,0 +1,12 @@
+def firstElementKTime(a, n, k):
+        dict={}
+        if k==1:
+            return a[0]
+        for value in a:
+            if value not in dict:
+                dict[value]=1
+            else:
+                dict[value]+=1
+            if dict[value]==k:
+                return value
+        return -1
